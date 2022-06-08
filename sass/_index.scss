@@ -1,0 +1,204 @@
+/* INDEX PORTADA */
+#portada{
+    .portada-contenedor{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        .portada-foto{
+            position: fixed;
+            height: 100%;
+            z-index: -10;
+        }
+    }    
+}
+
+/* INDEX SERVICIOS */
+#servicios{
+    background: white;
+    .separador-frase{
+        background-color: white;
+        height: 200px;
+        width: 100vw;
+        padding: 0px 30px 0px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 8;
+        h2{
+            text-align: center;
+            font-weight: 900;
+            font-size: 3rem;
+            margin-top: 50px;
+        }
+    }
+    .seccion-servicios{
+        height: 70vh;
+        display: flex;
+        .servicios-imagen{
+            height: 70vh;
+            width: 60vw;
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            img{
+                height: 100%;
+            }
+            video{
+                height: 100%;
+                right: 0;
+            }
+        }
+        .titular{
+            background: white;
+            height: 70vh;
+            width: 40vw;
+            z-index: 6;
+            display: flex;
+            align-items: flex-end;
+            transition: 0.5s;
+            a{
+                text-decoration: none;
+                h3{
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                    text-align: right;
+                    padding: 20px 0px 30px 0px;
+                }
+            }
+        }
+        .titular-der{
+            justify-content:flex-end;
+            padding-right: 20px;
+        }
+        .titular-izq{
+            justify-content:flex-start;
+            padding-left: 20px;
+        }
+    }
+    .seccion-fotografia{
+        .titular-fotografia{
+            a{
+                h3{
+                    color: $colorPrincipal; 
+                    border-top: solid 2px $colorPrincipal;
+                    transition: 0.5s;    
+                }
+            }
+        }
+        &:hover{
+            .titular-fotografia{
+                background: $colorPrincipal; 
+            }
+        }
+    }
+    .seccion-audiovisual{
+        .titular-audiovisual{
+            a{
+                h3{
+                    color: $colorAudiovisual;
+                    border-top: solid 2px $colorAudiovisual;
+                    transition: 0.5s;
+                }
+            }
+        }
+        &:hover{
+            .titular-audiovisual{
+                background: $colorAudiovisual; 
+            }
+        }        
+    }
+    .seccion-redes{
+        .titular-redes{
+            a{
+                h3{
+                    color: $colorRedes;
+                    border-top: solid 2px $colorRedes;
+                    transition: 0.5s;
+                }
+            }
+        }
+        &:hover{
+            .titular-redes{
+                background: $colorRedes; 
+            }
+        }        
+    }
+    .seccion-retoque{
+        .titular-retoque{
+            a{
+                h3{
+                    color: $colorRetoque;
+                    border-top: solid 2px $colorRetoque;
+                    transition: 0.5s;
+                }
+            }
+        }
+        &:hover{
+            .titular-retoque{
+                background: $colorRetoque; 
+            }
+        }        
+    }
+    .seccion-creativa{
+        .titular-creativa{
+            a{
+                h3{
+                    color: $colorCreativa;
+                    border-top: solid 2px $colorCreativa;
+                    transition: 0.5s;
+                }
+            }
+        }
+        &:hover{
+            .titular-creativa{
+                background: $colorCreativa; 
+            }
+        }        
+    }
+    .seccion-fotoperiodismo{
+        .titular-fotoperiodismo{
+            a{
+                h3{
+                    color: $colorFotoperiodismo;
+                    border-top: solid 2px $colorFotoperiodismo
+;
+                    transition: 0.5s;
+                }
+            }
+        }
+        &:hover{
+            .titular-fotoperiodismo{
+                background: $colorFotoperiodismo; 
+            }
+        }        
+    }
+    .seccion-personal{
+        .titular-personal{
+            a{
+                h3{
+                    color: $colorPrincipal;
+                    border-top: solid 2px $colorPrincipal;
+                    transition: 0.5s;
+                }
+            }
+        }
+        &:hover{
+            .titular-personal{
+                background: $colorPrincipal; 
+            }
+        }        
+    }
+    .seccion-servicios:hover{
+        a{
+            h3{
+                color: white;
+                border-top: solid 2px white;
+            }                                 
+        }
+    }
+}

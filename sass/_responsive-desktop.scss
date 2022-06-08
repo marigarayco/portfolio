@@ -1,0 +1,70 @@
+@media (min-width: $desktop){
+    /* RESPONSIVE DESKTOP - INDEX */
+    #portada{
+        .portada-contenedor{
+            .portada-foto{
+                position: fixed;
+                width: 100%;
+                height: auto;        
+            }
+        }
+    }
+
+    #servicios{
+        .seccion-servicios{
+            height: fit-content;
+            .servicios-imagen{
+                height:fit-content;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                video{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .titular{
+                height: auto;
+            }
+        }
+    }
+
+    /* RESPONSIVE DESKTOP - TRABAJOS NAV */
+    .nav-trabajos{
+        width: 100vw;
+        flex-flow: row;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        .nav-trabajos-contenedor {
+            width: fit-content;
+            padding: 0;
+            ul{
+                li{
+                    a{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+        /* RESPONSIVE DESKTOP - TRABAJOS GRILLA */
+        #grilla-trabajos{
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: repeat(7, 50vh);
+            gap: 0;
+            .grilla-item{
+                width: 33vw;
+                height: 50vh;
+                a{
+                    .info-item{
+                        width: 33%;
+                        height: 50vh;                        
+                    }
+                }
+            }
+        }
+}

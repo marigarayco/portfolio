@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* VARIABLES */
+@import 'vars';
+
+/* ENCABEZADO */
+@import 'header';
+
+/* INDEX */
+@import 'index';
+
+/* TRABAJOS */
+@import 'trabajos';
+
+/* CONTACTO */
+@import 'contacto';
+
+/* FOOTER */
+@import 'footer';
+
+
+/* RESPONSIVE */
+@import 'responsive-tablet';
+@import 'responsive-desktop';
