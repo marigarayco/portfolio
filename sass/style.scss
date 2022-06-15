@@ -5,8 +5,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* VARIABLES */
+// VARIABLES //
 @import 'vars';
+
+/* EXTENDS */
+@import 'extends';
+
+// MIXINS //
+@import 'mixins';
 
 /* ENCABEZADO */
 @import 'header';
