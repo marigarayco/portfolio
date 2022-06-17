@@ -1,9 +1,10 @@
 /* TRABAJOS - NAVEGACION */
 .nav-trabajos{
     width: 100vw;
+    background-color: #f8f9fa;
     @extend .centrar;
     flex-flow: column;
-    margin-top:60px;
+    margin-top:50px;
     .nav-trabajos-contenedor{
         width: 100vw;
         padding: 0px 10px 0px 10px;
@@ -39,17 +40,18 @@
     grid-template-rows: repeat(21, 30vh);
     gap: 5px;
     .grilla-item{
-        a{
+        .item-contenedor{
             @extend .centrar;
             overflow: hidden;
             height: 100%;
+            cursor: pointer;
             img{
                 width: 100%;
             }
             video{
                 width: 100%;
             }
-            .info-item{
+            .item-info{
                 background-color: rgba(0, 0, 0, 0.525);
                 position: absolute;
                 @extend .centrar;
@@ -64,9 +66,58 @@
                     text-align: center;
                 }
             }
-            &:hover .info-item{
+            &:hover .item-info{
                 opacity: 100%;
             }
         }    
+    }
+}
+
+/* MODAL */
+
+.modal-reset{
+    width: 100vw;    
+    .modal-dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 100vw;
+        margin-top: 50px;
+        .modal-content{
+            background: none;
+            border: none;
+            width: fit-content;
+            margin: 0;
+            padding: 0;
+            .modal-header{
+                border: none;
+            }
+            .modal-body{
+                height: 400px;
+                .modal-carousel{
+                    .carousel-inner{
+                        .carousel-item{
+                            video{
+                                width: 80vw;
+                            }
+                            img{
+                                width: 80vw;
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                display: block;
+                h3{
+                    color: white;
+                    font-weight: 700;
+                }
+                p{
+                    color: white;
+                    font-weight: 500;
+                }
+            }
+        }
     }
 }

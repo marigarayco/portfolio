@@ -8,7 +8,7 @@
     <!-- TAGS SEO -->
     <title>Mari Garayco | Trabajos</title>
     <meta name="description" content="Diseño, dirección y producción de contenido fotográfico y audiovisual de piezas acorde al proyecto del cliente.">
-    <meta name="keywords" content="mmari garayco, fotografia, video, diseño, audiovisual, edicion, portfolio, contenido, redes, fotografa, filmmaker, creativo, trabajos, portfolio">
+    <meta name="keywords" content="mari garayco, fotografia, video, diseño, audiovisual, edicion, portfolio, contenido, redes, fotografa, filmmaker, creativo, trabajos, portfolio">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- FONT MONTSERRAT -->
@@ -48,7 +48,7 @@
     <nav class="nav-trabajos">
         <div class="nav-trabajos-contenedor">
             <ul>
-                <li><a href="#">Todo</a></li>
+                <li><a href="./trabajos.html">Todo</a></li>
             </ul>
         </div>
         <div class="nav-trabajos-contenedor">
@@ -56,203 +56,441 @@
                 <li><a href="#">Fotografía</a></li>
                 <li><a href="#">Audiovisual</a></li>
                 <li><a href="#">Redes</a></li>
-                <li><a href="#">Retoque</a></li>
-                </ul>
-            </div>
-            <div class="nav-trabajos-contenedor">
-                <ul>
-                <li><a href="#">Dirección creativa</a></li>
+            </ul>
+        </div>
+        <div class="nav-trabajos-contenedor">
+            <ul>
                 <li><a href="#">Fotoperiodismo</a></li>
-                <li><a href="#">Personal</a></li>
+                <li><a href="./personal.html">Personal</a></li>
             </ul>
         </div>
     </nav>
     <main id="grilla-trabajos">
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+        <!-- ITEM 1 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item1">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>AUDIOVISUAL</h4>
                     <p>Video Publicitario Tortulan</p>
                 </div>
                 <video autoplay muted loop src="../img/audiovisual/audiovisual-tortulan.mp4" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+        <!-- MODAL 1 -->
+        <div class="modal-reset modal fade" id="modal-item1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleControls" class="carousel slide modal-carousel " data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <video autoplay muted loop src="../img/audiovisual/audiovisual-tortulan.mp4" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-03.jpg" class="d-block" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-04.jpg" class="d-block" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>TORTULAN</h3>
+                        <p>CLIENTE: Tortulan</p>
+                        <p>VIDEO: Marisol Garaycoechea</p>
+                        <p>EDICIÓN: Marisol Garaycoechea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- ITEM 2 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item2">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>FOTOGRAFIA</h4>
                     <p>Inauguración Lucciano's Las Lomitas</p>
                 </div>
                 <img src="../img/img-portfolio-publicidad/publicidad-02.jpg" alt="">
-            </a>
+            </div>
+        </div>      
+        <!-- MODAL 2 -->
+        <div class="modal-reset modal fade" id="modal-item2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modal-carousel carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-02.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-03.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-personal/portfolio-personal-07.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>LUCCIANO'S</h3>
+                        <p>CLIENTE: Lucciano's</p>
+                        <p>FOTOGRAFÍA: Marisol Garaycoechea</p>
+                        <p>VIDEO: Marisol Garaycoechea</p>
+                        <p>EDICIÓN: Gonzalo Scotti</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 3 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item3">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>CONTENIDO PARA REDES</h4>
                     <p>Gif Rayito de Sol</p>
                 </div>
                 <img src="../img/img-portfolio-publicidad/publicidad-06.gif" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+        <!-- MODAL 3 -->
+        <div class="modal-reset modal fade" id="modal-item3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleControls" class="carousel slide modal-carousel " data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-06.gif" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-03.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-04.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>TORTULAN</h3>
+                        <p>CLIENTE: Tortulan</p>
+                        <p>VIDEO: Marisol Garaycoechea</p>
+                        <p>EDICIÓN: Marisol Garaycoechea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ITEM 4 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item4">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>FOTOGRAFIA</h4>
                     <p>Campaña José Meolans para Aqualentes</p>
                 </div>    
                 <img src="../img/img-portfolio-publicidad/publicidad-01.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+        <!-- MODAL 4 -->
+        <div class="modal-reset modal fade" id="modal-item4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleControls" class="carousel slide modal-carousel " data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-01.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-03.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-04.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>AQUALENTES x MEOLANS</h3>
+                        <p>CLIENTE: Aqualentes</p>
+                        <p>FOTOGRAFÍA: Marisol Garaycoechea</p>
+                        <p>VIDEO: Marisol Garaycoechea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- ITEM 5 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item5">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>AUDIOVISUAL</h4>
                     <p>Cafe Don Bautista</p>
                 </div>
-                <video autoplay muted loop src="../img/audiovisual/audiovisual-cafe.mp4" alt="">
-            </a>
+                <iframe class="youtube" width="800" height="600" src="https://www.youtube.com/embed/or_fxrZV09E?showinfo=0&rel=0&mute=1&controls=0&autoplay=1&loop=1&playlist=or_fxrZV09E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loop></iframe>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+        <!-- MODAL 5 -->
+        <div class="modal-reset modal fade" id="modal-item5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleControls" class="carousel slide modal-carousel " data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <iframe class="youtube" width="500" height="300" src="https://www.youtube.com/embed/or_fxrZV09E?showinfo=0&rel=0&mute=1&controls=0&autoplay=1&loop=1&playlist=or_fxrZV09E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loop></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-03.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img-portfolio-publicidad/publicidad-04.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>DON BAUTISTA</h3>
+                        <p>CLIENTE: Café Don Bautista</p>
+                        <p>DIRECCIÓN: Marisol Garaycoechea</p>
+                        <p>FOTOGRAFÍA: Marisol Garaycoechea</p>
+                        <p>VIDEO: Gonzalo Scotti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ITEM 6 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item6">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>CONTENIDO PARA REDES</h4>
                     <p>Cervecería 7 Colores</p>
                 </div>
                 <img src="../img/img-portfolio-publicidad/publicidad-03.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 7 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item7">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>AUDIOVISUAL</h4>
                     <p>Federacion Atletica Metropolitana</p>
                 </div>
                 <video autoplay muted loop src="../img/audiovisual/audiovisual-fam.mp4" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 8 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item8">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>DIRECCIÓN CREATIVA</h4>
                     <p>Aqualentes</p>
                 </div>
                 <img src="../img/img-portfolio-publicidad/publicidad-04.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 9 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item9">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>AUDIOVISUAL</h4>
                     <p>Rayito de Sol</p>
                 </div>
                 <video autoplay muted loop src="../img/audiovisual/audiovisual-rayito.mp4" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 10 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item10">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>FOTOGRAFIA</h4>
                     <p>Hedonist</p>
                 </div>
                 <img src="../img/img-portfolio-publicidad/publicidad-05.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 11 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item11">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>RETOQUE</h4>
                     <p>Rayito de Sol</p>
                 </div>
                 <img src="../img/img-portfolio-publicidad/publicidad-09.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 12 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item12">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>FOTOPERIODISMO</h4>
                     <p></p>
                 </div>
                 <img src="../img/img-portfolio-fotoperiodismo/fotoperiodismo-01.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 13 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item13">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>PERSONAL</h4>
                 </div>
                 <img src="../img/img-portfolio-personal/portfolio-personal-01.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 14 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item14">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>PERSONAL</h4>
                 </div>
                 <img src="../img/img-portfolio-personal/portfolio-personal-06.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 15 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item15">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>PERSONAL</h4>
                 </div>
                 <img src="../img/img-portfolio-personal/portfolio-personal-07.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 16 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item16">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>DIRECCIÓN CREATIVA</h4>
                 </div>
                 <img src="../img/img-portfolio-personal/portfolio-personal-08.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 17 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item17">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>PERSONAL</h4>
                 </div>
                 <img src="../img/img-portfolio-personal/portfolio-personal-10.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 18 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item18">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>PERSONAL</h4>
                 </div>
                 <img src="../img/img-portfolio-personal/portfolio-personal-09.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 19 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item19">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>FOTOPERIODISMO</h4>
                     <p>Sabina Frederic y gendarmería. 
                        <br>Villa 1.11.14</p>
                 </div>
                 <img src="../img/img-portfolio-fotoperiodismo/fotoperiodismo-06.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 20 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item20">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>FOTOPERIODISMO</h4>
                     <p>Asunción Mayra Mendoza.
                         <br> Quilmes, 2019</p>
                 </div>
                 <img src="../img/img-portfolio-fotoperiodismo/fotoperiodismo-05.jpg" alt="">
-            </a>
+            </div>
         </div>
-        <div class="grilla-item">
-            <a href="#">
-                <div class="info-item">
+
+        <!-- ITEM 21 -->
+        <div class="grilla-item" data-bs-toggle="modal" data-bs-target="#modal-item21">
+            <div class="item-contenedor">
+                <div class="item-info">
                     <h4>FOTOPERIODISMO</h4>
                     <p>Mayra Mendoza y Axel Kiciloff.
                         <br>Villa Azul, Mayo 2020</p>
                 </div>
                 <img src="../img/img-portfolio-fotoperiodismo/fotoperiodismo-04.jpg" alt="">
-            </a>
+            </div>
         </div>
     </main>
 

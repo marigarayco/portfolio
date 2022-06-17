@@ -34,10 +34,11 @@
     .nav-trabajos{
         width: 100vw;
         flex-flow: row;
-        margin-bottom: 20px;
+        padding-bottom: 10px;
         justify-content: center;
         align-items: center;
-        margin-top: 70px;
+        margin-top: 50px;
+        margin-bottom: 5px;
         .nav-trabajos-contenedor {
             width: fit-content;
             padding: 0;
@@ -60,12 +61,82 @@
             .grilla-item{
                 width: 33vw;
                 height: 50vh;
-                a{
-                    .info-item{
+                .item-contenedor{
+                    .item-info{
                         width: 33%;
                         height: 50vh;                        
                     }
                 }
             }
         }
+
+    /* RESPONSIVE DESKTOP - SOBRE MI */
+    #sobre-mi{
+        height: 90vh;
+        display: flex;
+        flex-flow: row;
+        padding-bottom: 10px;
+        padding: 80px 50px 0px 50px;
+        img{
+            border: none;
+        }
+        .sobre-mi_contenedor{
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            margin-left: 50px;
+            h1{
+                font-weight: 900;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+
+    /* RESPONSIVE DESKTOP - TRABAJOS MODAL */
+    .modal-reset{
+        width: 100vw;
+        height: 100vh;    
+        .modal-dialog{
+            max-width: none;        
+            width: 100vw;
+            margin-top: 40px;
+            .modal-content{
+                width: 90vw;
+                height: 90vh;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-flow: row wrap;
+                .modal-header{
+                    border: none;
+                    width: 100%;
+                }
+                .modal-body{
+                    height: fit-content;
+                    width: 60vw;
+                    .modal-carousel{
+                        .carousel-inner{
+                            .carousel-item{
+                                video{
+                                    max-width: 80vw;
+                                }
+                                img{
+                                    max-width: 80vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                .modal-footer{
+                    width: 20vw;
+                    border: none;
+                    padding-left: 10px;
+                    justify-content: end;
+                }
+            }
+        }
+    }
+
 }

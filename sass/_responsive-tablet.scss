@@ -32,7 +32,7 @@
         .grilla-item{
             height:40vh;
             width: 50vw;
-            a{
+            .item-contenedor{
                 img{
                     object-fit:cover;
                     height: 100%;
@@ -41,7 +41,7 @@
                     object-fit:cover;
                     height: 100%;
                 }
-                .info-item{
+                .item-info{
                     object-fit:cover;
                     height: 40vh;
                     width: 50vw;
@@ -50,6 +50,57 @@
         }        
     }
 
+    /* RESPONSIVE TABLET - TRABAJOS MODAL */
+    .modal-reset{
+        width: 100vw;    
+        .modal-dialog{
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            width: 100vw;
+            margin-top: 50px;
+            .modal-content{
+                background: none;
+                border: none;
+                width: fit-content;
+                margin: 0;
+                padding: 0;
+                .modal-header{
+                    border: none;
+                }
+                .modal-body{
+                    height: fit-content;
+                    .modal-carousel{
+                        .carousel-inner{
+                            .carousel-item{
+                                video{
+                                    width: 80vw;
+                                }
+                                img{
+                                    width: 80vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* RESPONSIVE TABLET - SOBRE MI */
+    .sobre-mi_contenedor{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        h1{
+            width: 100%;
+        }
+        p{
+            display: inline;
+            width: 48%;
+            text-align: justify;
+        }
+    }
 
     /* RESPONSIVE TABLET - FOOTER */
     #pie{
